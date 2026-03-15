@@ -1,0 +1,75 @@
+.container {
+  max-width: 770px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.header {
+  background: white;
+  border-top: 10px solid #673ab7;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+
+  h1 { font-size: 32px; margin-bottom: 8px; }
+  p { color: #202124; }
+}
+
+.questionCard {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.questionTitle {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.answerArea {
+  input[type="text"], input[type="date"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #dadce0;
+    padding: 8px 0;
+    outline: none;
+    font-size: 14px;
+    color: $text-main;
+    &:focus { border-bottom: 2px solid #673ab7; }
+  }
+}
+
+.optionRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 4px 0;
+
+  &:hover {
+    background-color: #f8f9fa;
+  }
+}
+
+.optionLabel {
+  cursor: pointer;
+  font-size: 14px;
+  color: #202124;
+  flex: 1;
+}
+
+.radioInput, .checkboxInput {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #673ab7;
+}
+
+.footer {
+  margin-top: 24px;
+}

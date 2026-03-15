@@ -1,0 +1,18 @@
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  border: 1px solid $primary-light;
+  font-size: 32px;
+  background: transparent;
+  outline: none;
+  color: $text-white;
+
+  &::placeholder {
+    color: $text-secondary;
+  }
+}

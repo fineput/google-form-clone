@@ -1,0 +1,40 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  color: $text-white;
+
+  &:hover {
+    -webkit-box-shadow: 8px 8px 17px 1px rgba(255,255,255,0.63);
+    box-shadow: 2px 2px 8px 1px $primary-light;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px $primary-light;
+  }
+
+  &--primary{
+    background-color: $primary-color;
+
+  }
+
+  &--outline {
+    border: 1px solid #dadce0;
+    background: $text-main;
+    color: $text-white;
+  }
+
+
+
+  &--sm { padding: 6px 12px; font-size: 13px; }
+  &--md { padding: 10px 20px; font-size: 14px; }
+  &--lg { padding: 14px 28px; font-size: 16px; }
+}
